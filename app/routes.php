@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function()
+//Route::controller(Controller::detect()); // This is for detecting if there is a wrong controller, it will throw a 404 error.
+Route::get('/', function ()
 {
-	return View::make('hello');
+	return View::make('home.index');
 });
